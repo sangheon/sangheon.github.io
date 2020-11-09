@@ -18,7 +18,7 @@ plainwhite:
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
+  #dark_mode: true # set to true to add dark mode toggle
   portfolio_image: "assets/logo.png" #assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   # generate social links in footer
@@ -26,16 +26,6 @@ plainwhite:
     #twitter: jekyll
     github:  sangheon
     linkedIn: in/sangheon-kim
-    #rss: rss
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
   analytics_id: "181996032"
 
   navigation:
@@ -43,12 +33,6 @@ plainwhite:
       url: "/"
     - title: Author
       url: "/author"
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -60,5 +44,5 @@ remote-theme: samarsault/plainwhite-jekyll
 
 plugins:
   - jekyll-seo-tag
-  #- jekyll-feed
-  #- jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-redirect-from
