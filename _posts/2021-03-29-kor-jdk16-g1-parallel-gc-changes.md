@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "JDK 16 G1/Parallel GC 변경 사항들"
+title:  "[번역] JDK 16 G1/Parallel GC 변경 사항들"
 date:   2021-03-12 16:39:24 +0200
 #categories: gc g1 parallel JDK-16 performance
 tags: [GC, G1, Parallel, JDK 16, Performance]
 ---
 
-본 번역은 팀 동료인 Thomas Schatzl의 동의하에 한국어 번역을 것입니다.
-원문은 https://tschatzl.github.io/2021/03/12/jdk16-g1-parallel-gc-changes.html 입니다.
+이 글은 원저자이자 팀 동료인 Thomas Schatzl의 동의하에 한국어 번역을 것입니다.
+원문은 [여기](https://tschatzl.github.io/2021/03/12/jdk16-g1-parallel-gc-changes.html) 입니다.
 
 이 포스트는 JDK 16 Hotspot의 stop-the-world 가바지 컬렉터인 G1과 Parallel GC의 가장 중요한 변경 사항을 요약합니다.
 
