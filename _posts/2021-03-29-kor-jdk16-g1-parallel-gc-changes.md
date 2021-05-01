@@ -11,7 +11,7 @@ tags: [GC, G1, Parallel, JDK 16, Performance]
 
 이 포스트는 JDK 16 Hotspot의 stop-the-world 가바지 컬렉터인 G1과 Parallel GC의 가장 중요한 변경 사항을 요약합니다.
 
-첫째, 모든 GC 서브 컴포넌트의 간단한 개요: **ZGC**완 관련된 [JEP 376](https://openjdk.java.net/jeps/376)가 유일하다 할 수 있습니다. 변경 내용은 쓰레드-스택 처리를 stop-the-world pauses에서 concurrent하게 바꾸었다는 것인데, 이로 인해 pause가 1 밀리 세컨드 (1ms)이하로 됩니다. 그 외에 **G1**과 **Parallel GC**도 흥미로운 소소한 업데이트가 있습니다.
+첫째, 모든 GC 서브 컴포넌트의 간단한 개요: **ZGC**와 관련된 [JEP 376](https://openjdk.java.net/jeps/376)이 유일하다 할 수 있습니다. 변경 내용은 쓰레드-스택 처리를 stop-the-world pauses에서 concurrent하게 바꾸었다는 것인데, 이로 인해 pause가 1 밀리 세컨드 (1ms)이하로 됩니다. 그 외에 **G1**과 **Parallel GC**도 흥미로운 소소한 업데이트가 있습니다.
 
 전체 Hotspot GC 서브 컴포넌트의 변경 사항 목록은 [여기](https://bugs.openjdk.java.net/issues/?jql=project%20%3D%20JDK%20AND%20issuetype%20in%20standardIssueTypes()%20AND%20status%20in%20(Resolved%2C%20Closed)%20AND%20resolution%20%3D%20Fixed%20AND%20fixVersion%20%3D%20%2216%22%20AND%20component%20%3D%20hotspot%20AND%20Subcomponent%20in%20(gc%2C%20gc%2C%20gc%2C%20gc%2C%20gc)%20ORDER%20BY%20key%20ASC)에 있으며, 총 325 개입니다.
 
